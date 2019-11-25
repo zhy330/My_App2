@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyDataActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background"
+        app:title="@string/add_goods_data"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/goods_picture_edit"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:hint="@string/goods_picture_edit"/>
+
+        <Button
+            android:id="@+id/btn_goods_picture_edit"
+            android:layout_margin="10dp"
+            android:background="@drawable/background"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:text="@string/edit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/goods_name_edit"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:hint="@string/goods_name"/>
+
+        <Button
+            android:id="@+id/btn_goods_name_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/background"
+            android:textColor="#FFFFFF"
+            android:text="@string/edit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/goods_num_edit"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:hint="@string/goods_num"/>
+
+        <Button
+            android:id="@+id/btn_goods_num_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/background"
+            android:textColor="#FFFFFF"
+            android:text="@string/edit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/goods_price_edit"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:hint="@string/goods_price"/>
+
+        <Button
+            android:id="@+id/btn_goods_price_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/background"
+            android:textColor="#FFFFFF"
+            android:text="@string/edit"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_goods_delete"
+        android:background="@drawable/background"
+        android:textColor="#FFFFFF"
+        android:layout_margin="40dp"/>
+
+
+</LinearLayout>

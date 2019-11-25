@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background"
+        app:title="@string/add_buy"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/goods_enter_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_margin="10dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:text="@string/money"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:gravity="right"
+               android:layout_margin="10dp"
+               android:layout_weight="1"/>
+
+           <TextView
+               android:id="@+id/goods_enter_price"
+               android:layout_width="0dp"
+               android:layout_weight="4"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:text="@string/add_goods_ps"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:gravity="right"
+               android:layout_weight="1"/>
+
+           <TextView
+               android:id="@+id/goods_enter_num"
+               android:layout_width="0dp"
+               android:layout_weight="4"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"/>
+
+       </LinearLayout>
+
+       <EditText
+           android:id="@+id/goods_enter_buy_num"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/buy_num"
+           android:layout_gravity="center"
+           android:layout_margin="10dp"/>
+
+       <Button
+           android:id="@+id/btn_goods_enter_buy"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="@drawable/background"
+           android:layout_margin="10dp"
+           android:text="@string/buy"
+           android:textColor="#FFFFFF" />
+
+       <Button
+           android:id="@+id/btn_goods_enter_shop_enter"
+           android:background="@drawable/background"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textColor="#FFFFFF"
+           android:text="@string/shop_enter"/>
+
+   </LinearLayout>
+
+
+</LinearLayout>

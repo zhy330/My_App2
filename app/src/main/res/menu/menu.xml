@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@mipmap/my_shop"
+            android:title="我的商店"
+            />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@mipmap/history"
+            android:title="历史订单" />
+        <item
+            android:id="@+id/my_data"
+            android:icon="@mipmap/mydata"
+            android:title="我的资料"/>
+        <item
+            android:id="@+id/nav_shopping_cart"
+            android:title="购物车" />
+    </group>
+</menu>
